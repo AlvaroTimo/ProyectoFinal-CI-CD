@@ -1,18 +1,12 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:6-alpine'
-            args '-p 3000:3000'
-        }
+  agent any
+  tools {nodejs "node"}
+  stages {
+    stage('Build') {
+      steps {
+        git 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD'
+        sh 'npm install'
+      }
     }
-     environment {
-            CI = 'true'
-        }
-    stages {
-        stage('Build') {
-            steps {
-                sh 'npm install'
-            }
-        }
-    }
+  }
 }
