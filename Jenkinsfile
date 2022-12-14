@@ -20,6 +20,12 @@ pipeline {
         git branch:'main',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
         sh 'npm install'
       }
+    },
+    stage('Test'){
+      steps {
+        git branch:'main',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
+        sh 'npm run test'
+      }
     }
 
 
