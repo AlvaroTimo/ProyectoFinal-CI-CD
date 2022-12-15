@@ -7,6 +7,7 @@ const db = {
         items.forEach((item) => {
           const product = db.methods.find(item.id);
           product.qty = product.qty - item.qty;
+
         });
   
         console.log(db);
@@ -41,7 +42,7 @@ const db = {
         const cartItem = shoppingCart.methods.get(id);
         if (cartItem) {
           if (shoppingCart.methods.hasInventory(id, qty + cartItem.qty)) {
-            cartItem.qty++;
+            cartItem.qty+=qty;
           } else {
             alert("No hay más inventario");
           }
@@ -52,8 +53,8 @@ const db = {
       remove: (id, qty) => {
         const cartItem = shoppingCart.methods.get(id);
   
-        if (cartItem.qty - 1 > 0) {
-          cartItem.qty--;
+        if (cartItem.qty - qty > 0) {
+          cartItem.qty-=qty;
         } else {
           shoppingCart.items = shoppingCart.items.filter(
             (item) => item.id !== id
@@ -80,6 +81,7 @@ const db = {
       },
       purchase: () => {
         db.methods.remove(shoppingCart.items);
+        shoppingCart.items = [];
       },
     },
   };
@@ -125,9 +127,8 @@ const db = {
                   <div class="title">${dbItem.title}</div>
                   <div class="price">${numberToCurrency(dbItem.price)}</div>
                   <div class="qty">${item.qty} units</div>
-                  <div class="subtotal">Subtotal: ${numberToCurrency(
-                    item.qty * dbItem.price
-                  )}</div>
+                  <div class="subtotal">
+                    Subtotal: ${numberToCurrency(item.qty * dbItem.price)}</div>
                   <div class="actions">
                       <button class="addOne" data-id="${dbItem.id}">+</button>
                       <button class="removeOne" data-id="${dbItem.id}">-</button>
@@ -141,12 +142,14 @@ const db = {
     </div>`;
     const purchaseButton =
       shoppingCart.items.length > 0
-        ? `<div class="cart-actions">
-      <button id="bPurchase">Terminar compra</button>
-    </div>`
+        ? `
+        <div class="cart-actions">
+          <button id="bPurchase">Terminar compra</button>
+        </div>`
         : "";
     const total = shoppingCart.methods.getTotal();
     const totalDiv = `<div class="total">Total: ${numberToCurrency(total)}</div>`;
+    
     document.querySelector("#shopping-cart-container").innerHTML =
       closeButton + html.join("") + totalDiv + purchaseButton;
   
@@ -173,10 +176,13 @@ const db = {
       document.querySelector("#shopping-cart-container").classList.remove("show");
       document.querySelector("#shopping-cart-container").classList.add("hide");
     });
+
     const bPurchase = document.querySelector("#bPurchase");
     if (bPurchase) {
       bPurchase.addEventListener("click", (e) => {
         shoppingCart.methods.purchase();
+        renderStore();
+        renderShoppingCart();
       });
     }
   }
