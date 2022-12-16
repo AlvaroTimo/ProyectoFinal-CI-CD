@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "sonar": "node sonar-project.js",
     "test2": "NODE_OPTIONS=--experimental-vm-modules jest --watchAll"
   },
   "keywords": [],

@@ -29,6 +29,10 @@ pipeline {
         sh 'npm run test'
       }
     }
-
+    stage('Static Analysis'){
+      steps {
+        sh 'npm run sonar'
+      }
+    }
   }
 }
