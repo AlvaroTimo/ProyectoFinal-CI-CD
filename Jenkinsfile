@@ -31,6 +31,7 @@ pipeline {
     }
     stage('Static Analysis'){
       steps {
+        git branch:'main',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
         sh 'npm run sonar'
       }
     }
