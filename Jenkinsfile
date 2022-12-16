@@ -17,8 +17,18 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        script {
+          try {
+            sh 'docker stop ${container_name}'
+            sh 'docker rm ${container_name}'
+            sh 'docker rmi ${image_name}:${tag_image}'
+          } catch (Exception e) {
+            echo 'Exception occurred: ' + e.toString()
+          }
+        }
         git branch:'main',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
         sh 'npm install'
+        sh 'docker build -t ${image_name}:${tag_image} .'
       }
     }
     stage('Test'){
