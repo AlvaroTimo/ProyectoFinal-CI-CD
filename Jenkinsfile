@@ -29,11 +29,14 @@ pipeline {
         sh 'npm run test'
       }
     }
-    stage('SonarQube analysis') {
-      def scannerHome = tool 'SonarScanner 4.0';
-      withSonarQubeEnv('sonarqube-container') {
-        sh "${scannerHome}/bin/sonar-scanner"
+    stage('Static Analysis') {
+      environment {
+        SCANNER_HOME = tool 'SonarScanner'
       }
-    }
+      steps {
+        withSonarQubeEnv('Sonarqube') {
+            sh '$SCANNER_HOME/bin/sonar-scanner -X'
+        }
+      }
   }
 }
