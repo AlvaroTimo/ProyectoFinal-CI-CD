@@ -33,5 +33,15 @@ pipeline {
         sh 'npm run test'
       }
     }
+    stage('Static Analysis') {
+      environment {
+        SCANNER_HOME = tool 'SonarScanner'
+      }
+      steps {
+        withSonarQubeEnv('Sonarqube') {
+            sh '$SCANNER_HOME/bin/sonar-scanner -X'
+        }
+      }
+    }
   }
 }
