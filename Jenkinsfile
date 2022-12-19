@@ -15,9 +15,14 @@ pipeline {
   }
 
   stages {
+    stage('Repository'){
+      steps{
+        git branch:'desarrollo',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
+      }
+    }
+
     stage('Build') {
       steps {
-        git branch:'desarrollo',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
         nodejs(nodeJSInstallationName: 'node'){
           sh 'npm install'
         }
@@ -25,18 +30,7 @@ pipeline {
     }
     stage('Test'){
       steps {
-        git branch:'desarrollo',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
         sh 'npm run test'
-      }
-    }
-    stage('Static Analysis') {
-      environment {
-        SCANNER_HOME = tool 'SonarScanner'
-      }
-      steps {
-        withSonarQubeEnv('Sonarqube') {
-            sh '$SCANNER_HOME/bin/sonar-scanner -X'
-        }
       }
     }
   }
