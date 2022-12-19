@@ -17,7 +17,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        git branch:'main',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
+        git branch:'desarrollo',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
         nodejs(nodeJSInstallationName: 'node'){
           sh 'npm install'
         }
@@ -25,7 +25,7 @@ pipeline {
     }
     stage('Test'){
       steps {
-        git branch:'main',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
+        git branch:'desarrollo',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
         sh 'npm run test'
       }
     }
