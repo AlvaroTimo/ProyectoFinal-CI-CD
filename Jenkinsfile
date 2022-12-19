@@ -29,14 +29,10 @@ pipeline {
         sh 'npm run test'
       }
     }
-    stage('Static Analysis'){
-      steps {
-        dir('/Users/eltimo/Documents/sonarqube/bin/macosx-universal-64') { 
-          sh './sonar.sh start'
-        }
-        dir('/Users/eltimo/Documents/3rosegundasemestre/IS-II/Trabajo-Final') { 
-          sh 'sudo sonar-scanner -X'
-        }
+    stage('SonarQube analysis') {
+      def scannerHome = tool 'SonarScanner 4.0';
+      withSonarQubeEnv('sonarqube-container') {
+        sh "${scannerHome}/bin/sonar-scanner"
       }
     }
   }
