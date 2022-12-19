@@ -35,7 +35,7 @@ pipeline {
           sh './sonar.sh start'
         }
         dir('/Users/eltimo/Documents/3rosegundasemestre/IS-II/Trabajo-Final') { 
-          sh 'sonar-scanner -X'
+          sh 'sudo sonar-scanner -X'
         }
       }
     }

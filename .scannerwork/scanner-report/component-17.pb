@@ -1,1 +1,1 @@
- 2cssX6hrsrc/public/css/style.css
+ 2jsXhrsrc/index.js
