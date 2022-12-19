@@ -31,8 +31,12 @@ pipeline {
     }
     stage('Static Analysis'){
       steps {
-        git branch:'main',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
-        sh 'npm run sonar'
+        dir('/Users/eltimo/Documents/sonarqube/bin/macosx-universal-64') { 
+          sh './sonar.sh start'
+        }
+        dir('/Users/eltimo/Documents/3rosegundasemestre/IS-II/Trabajo-Final') { 
+          sh 'sonar-scanner -X'
+        }
       }
     }
   }
