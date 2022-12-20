@@ -25,7 +25,7 @@ pipeline {
     }
     stage('Static Analysis') {
       steps{
-        dir ('/Users/eltimo/Documents/sonarqube/bin/macosx-universal-64'){
+        dir ('./'){
           sh "ls"
         }
       }
