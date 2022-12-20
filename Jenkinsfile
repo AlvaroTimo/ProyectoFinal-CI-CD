@@ -1,11 +1,26 @@
 pipeline {
   agent any
+  tools {
+    nodejs "node"
+  }
+
   stages {
+    stage('Repository'){
+      steps{
+        git branch:'desarrollo',url: 'https://github.com/AlvaroTimo/ProyectoFinal-CI-CD.git'
+      }
+    }
+
     stage('Build') {
       steps {
-        dir('/Users/eltimo/Documents/3rosegundasemestre/IS-II/Trabajo-Final') { 
+        nodejs(nodeJSInstallationName: 'node'){
           sh 'npm install'
         }
+      }
+    }
+    stage('Test'){
+      steps {
+        sh 'npm run test'
       }
     }
   }
