@@ -24,12 +24,11 @@ pipeline {
       }
     }
     stage('Static Analysis') {
-      environment {
-        SCANNER_HOME = tool 'SonarScanner'
-      }
-      steps {
-        withSonarQubeEnv('Sonarqube') {
-            sh '$SCANNER_HOME/bin/sonar-scanner -X'
+      {
+        steps{
+          dir ('/Users/eltimo/Documents/sonarqube/bin/macosx-universal-64'){
+            sh "./sonar.sh start"
+          }
         }
       }
     }
