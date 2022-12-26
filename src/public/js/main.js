@@ -97,6 +97,7 @@ const shoppingCart = {
   db.methods.addProduct("hola",12,10);
 
   renderStore();
+
   function renderStore() {
     const html = db.items.map((item) => {
       return `
@@ -108,9 +109,12 @@ const shoppingCart = {
                 item.id
               }">Add to the shopping cart</button></div>
           </div>`;
-    });
+    }
+    );
   
-    document.querySelector("#store-container").innerHTML = html.join("");
+    const addButton = `<button class="add"> <a href="/agregarProducto">Agregar nuevo producto</a></button>`;
+
+    document.querySelector("#store-container").innerHTML = html.join("")+ addButton;
   
     document.querySelectorAll(".item .actions .add").forEach((button) => {
       button.addEventListener("click", (e) => {
@@ -127,6 +131,11 @@ const shoppingCart = {
       });
     });
   }
+
+  // document.querySelector("#").innerHTML =
+  //     closeButton+ html.join("") + totalDiv + purchaseButton;
+  
+  // + addButton
   
   function renderShoppingCart() {
     const html = shoppingCart.items.map((item) => {
@@ -149,6 +158,7 @@ const shoppingCart = {
     <div class="cart-header">
       <button id="bClose">Close</button>
     </div>`;
+
     const purchaseButton =
       shoppingCart.items.length > 0
         ? `
@@ -160,7 +170,7 @@ const shoppingCart = {
     const totalDiv = `<div class="total">Total: ${numberToCurrency(total)}</div>`;
     
     document.querySelector("#shopping-cart-container").innerHTML =
-      closeButton + html.join("") + totalDiv + purchaseButton;
+      closeButton+ html.join("") + totalDiv + purchaseButton;
   
     document.querySelector("#shopping-cart-container").classList.remove("hide");
     document.querySelector("#shopping-cart-container").classList.add("show");

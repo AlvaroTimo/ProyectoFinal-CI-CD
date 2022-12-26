@@ -23,7 +23,7 @@ app.get('/agregarProducto',(req,res)=>{
 })
 
 app.post('/agregarProducto',(req,res)=>{
-    
+    res.render('index.ejs')
 })
 
 
