@@ -34,7 +34,9 @@ Aqui escribre una descripción con imagen Cecilia
 
 ## **Ejecución de Test Unitarios*
 ## **Pruebas de Performance con Jmeter**
+Aqui escribre una descripción con imagen Albert 
 ## **Pruebas funcionales con Selenium**
+Aqui escribre una descripción con imagen Albert 
 
 ## **Pruebas de seguridad con OWASP**
 Aqui escribre una descripción con imagen Joao
