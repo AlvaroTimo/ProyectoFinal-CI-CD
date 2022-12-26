@@ -1,17 +1,31 @@
 const express = require("express");
-const {dirname,join} = require("path");
-// const { fileURLToPath } = require("url");
+const {join} = require("path");
+// const morgan = require('morgan');
+// const {db} = require("./public/js/main.js");
+// import {db} from "./public/js/main.js";
 
 const app = express();
-
-// const __dirname=dirname(fileURLToPath(import.meta.url))
 
 app.set('views',join(__dirname,'views'))
 app.set('view engine','ejs')
 
+app.use(express.json());
+// app.use(morgan('dev'));
+
+app.use(express.urlencoded({ extended: false }));
+
 app.get('/',(req,res)=>{
     res.render('index');
 })
+
+app.get('/agregarProducto',(req,res)=>{
+    res.render('agregarProducto');
+})
+
+app.post('/agregarProducto',(req,res)=>{
+    
+})
+
 
 app.use(express.static(join(__dirname,'public')))
 
