@@ -131,11 +131,6 @@ const shoppingCart = {
       });
     });
   }
-
-  // document.querySelector("#").innerHTML =
-  //     closeButton+ html.join("") + totalDiv + purchaseButton;
-  
-  // + addButton
   
   function renderShoppingCart() {
     const html = shoppingCart.items.map((item) => {
