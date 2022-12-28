@@ -3737,9 +3737,7 @@ textarea.form-control-lg {
 .dropstart .dropdown-toggle:empty::after {
   margin-left: 0;
 }
-.dropstart .dropdown-toggle::before {
-  vertical-align: 0;
-}
+
 
 .dropdown-divider {
   height: 0;
@@ -4797,6 +4795,7 @@ textarea.form-control-lg {
   background-color: #fff;
   border: 1px solid #dee2e6;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: 0.375rem 0.75rem;
 }
 @media (prefers-reduced-motion: reduce) {
   .page-link {
@@ -4831,10 +4830,6 @@ textarea.form-control-lg {
   pointer-events: none;
   background-color: #fff;
   border-color: #dee2e6;
-}
-
-.page-link {
-  padding: 0.375rem 0.75rem;
 }
 
 .page-item:first-child .page-link {
