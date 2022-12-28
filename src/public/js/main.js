@@ -211,3 +211,5 @@ window.onload = function () {
     }).format(n);
   }
 }
+
+module.exports = {db,shoppingCart}
