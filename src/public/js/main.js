@@ -96,6 +96,8 @@ const shoppingCart = {
 
   db.methods.addProduct("hola",12,10);
 
+
+window.onload = function () {
   renderStore();
 
   function renderStore() {
@@ -208,3 +210,4 @@ const shoppingCart = {
       currency: "USD",
     }).format(n);
   }
+}
