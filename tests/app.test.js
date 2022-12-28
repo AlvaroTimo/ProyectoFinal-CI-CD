@@ -6,6 +6,25 @@ describe('GET /',()=>{
         const response = await request(app).get('/').send()
         expect(response.statusCode).toBe(200)
     })
+
+    test("should respond with a 200 status code",async ()=>{
+        const response = await request(app).get('/#services').send()
+        expect(response.statusCode).toBe(200)
+    })
+
+    test("should respond with a 200 status code",async ()=>{
+        const response = await request(app).get('/#portfolio').send()
+        expect(response.statusCode).toBe(200)
+    })
+
+    test("should respond with a 200 status code",async ()=>{
+        const response = await request(app).get('/#about').send()
+        expect(response.statusCode).toBe(200)
+    })
+    test("should respond with a 200 status code",async ()=>{
+        const response = await request(app).get('/#team').send()
+        expect(response.statusCode).toBe(200)
+    })
 })
 
 describe('GET /index',()=>{
