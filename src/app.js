@@ -1,16 +1,29 @@
 const express = require("express");
-const {dirname,join} = require("path");
-// const { fileURLToPath } = require("url");
+const {join} = require("path");
 
 const app = express();
-
-// const __dirname=dirname(fileURLToPath(import.meta.url))
 
 app.set('views',join(__dirname,'views'))
 app.set('view engine','ejs')
 
+app.use(express.json());
+
+app.use(express.urlencoded({ extended: false }));
+
 app.get('/',(req,res)=>{
-    res.render('index');
+    res.render('home.ejs');
+})
+
+app.get('/index',(req,res)=>{
+    res.render('index.ejs');
+})
+
+app.get('/agregarProducto',(req,res)=>{
+    res.render('agregarProducto.ejs');
+})
+
+app.post('/agregarProducto',(req,res)=>{
+    res.render('index.ejs')
 })
 
 app.use(express.static(join(__dirname,'public')))
