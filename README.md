@@ -6,7 +6,7 @@ Aqui escribre una descripción con imagen Alain
 #### ANALYSIS
 Se usó la herramienta SONARQUBE para el análisis estático del codigo
 
-https://github.com/AlvaroTimo/ProyectoFinal-CI-CD/blob/Cecilia/sonar.jpeg
+<img src="https://github.com/AlvaroTimo/ProyectoFinal-CI-CD/blob/Cecilia/sonar.jpeg">
 
 #### UNIT TEST
 
