@@ -29,7 +29,6 @@ const db = {
         product.qty = product.qty - item.qty;
 
       });
-      console.log(db);
     },
     addProduct: (title,price,qty)=>{
       let newId=db.items.length
@@ -122,10 +121,8 @@ window.onload = function () {
       button.addEventListener("click", (e) => {
         const id = parseInt(button.getAttribute("data-id"));
         const item = db.methods.find(id);
-        console.log(item)
         if (item && item.qty - 1 > 0) {
           shoppingCart.methods.add(id, 1);
-          console.log(db, shoppingCart);
           renderShoppingCart();
         } else {
           alert("Ya no hay existencia de ese artículo");
