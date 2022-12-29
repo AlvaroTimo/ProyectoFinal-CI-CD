@@ -5,7 +5,8 @@ Aqui escribre una descripción con imagen Alain
 
 #### ANALYSIS
 Se usó la herramienta SONARQUBE para el análisis estático del codigo
-Aqui escribre una descripción con imagen Albert 
+
+https://github.com/AlvaroTimo/ProyectoFinal-CI-CD/blob/Cecilia/sonar.jpeg
 
 #### UNIT TEST
 #Aqui escribre una descripción con imagen Cecilia sobre lo que son las pruebas unitarias
