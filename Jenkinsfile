@@ -18,9 +18,14 @@ pipeline {
         }
       }
     }
-    stage('Test'){
+    stage('Tests unitarios'){
       steps {
         sh 'npm run test'
+      }
+    }
+    stage('Tests '){
+      steps {
+        sh 'npm run test2'
       }
     }
     stage('Static Analysis') {
