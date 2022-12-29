@@ -14,7 +14,7 @@ const db = {
     },
     {
       id: 2,
-      title: "Phillips Hue",
+      title: "Phillips Hue",  
       price: 1300,
       qty: 80,
     },
@@ -70,7 +70,7 @@ const shoppingCart = {
         }
       },
       count: () => {
-        return shoppingCart.items.reduce((acc, item) => acc + item.qyt, 0);
+        return shoppingCart.items.reduce((acc, item) => acc + item.qty, 0);
       },
       get: (id) => {
         const index = shoppingCart.items.findIndex((item) => item.id === id);
