@@ -6,7 +6,6 @@ Aqui escribre una descripción con imagen Alain
 #### ANALYSIS
 Se usó la herramienta SONARQUBE para el análisis estático del codigo
 
-<img src="https://github.com/AlvaroTimo/ProyectoFinal-CI-CD/blob/Cecilia/sonar.jpeg">
 
 #### UNIT TEST
 
@@ -63,10 +62,11 @@ Miden el rendimiento en función de la capacidad del software para escalar hacia
 Analizan si una aplicación de software o un entorno pueden manejar la cantidad de tráfico para el que fue diseñado específicamente.
 
 ## Análisis con SonarQube
-Aqui pondra imagen alvaro
+![sonar](https://user-images.githubusercontent.com/22668239/210022213-b1dfb852-a22d-4603-a118-102c5c5129d8.jpeg)
 
 ## Refactoring code
 ### Bad smells in code
+![WhatsApp Image 2022-12-29 at 6 41 23 PM](https://user-images.githubusercontent.com/22668239/210022228-f3bb33b7-47e2-4b1b-bc1d-e54e5cd671c9.jpeg)
 
 ## **Ejecución de Test Unitarios*
 ## **Pruebas de Performance con Jmeter**
@@ -88,6 +88,9 @@ Funcionamiento: JMeter simula un grupo de usuarios virtuales (threads-hilos) y l
 (requests) en el servidor de destino. También recopila cada respuesta proveniente del servidor en forma de tablas,
 gráficos, árbol de resultados, etc.
 
+![WhatsApp Image 2022-12-29 at 6 36 31 PM](https://user-images.githubusercontent.com/22668239/210022254-d52596de-f8ea-476c-9958-6462493d14b1.jpeg)
+
+
 ## **Pruebas funcionales con Selenium**
 Selenium es un conjunto de utilidades que facilita la labor de obtener juegos de pruebas para aplicaciones web. Para ello nos permite grabar, editar y depurar casos de prueba, que podrán ser ejecutados de forma automática e iterativa posteriormente.
 
@@ -102,10 +105,16 @@ Además de ser una herramienta para registrar acciones, permite editarlas manual
  
 El potencial de esta herramienta puede ser utilizado para la grabación de las pruebas funcionales durante la Generación de pruebas de regresión. Con este servicio se consigue obtener una batería de pruebas automatizadas que podrán ser utilizadas cuando sea necesario repetir las pruebas.
 
+![WhatsApp Image 2022-12-29 at 6 37 31 PM](https://user-images.githubusercontent.com/22668239/210022267-2c8b97f0-ef3b-4b8c-87e8-beb8d3631e78.jpeg)
+
+
 ## **Pruebas de seguridad con OWASP**
 ### ¿Qué es OWASP (Open Web Application Security Project)?
 El Open Web Application Security Project (OWASP) está dedicado a la búsqueda y la lucha contra las vulnerabilidades en el software. La OWASP Foundation es una organización sin ánimo de lucro que proporciona la infraestructura y apoya a este trabajo.
 - La participación es gratuita y abierta para todos
 - Aquí todo es gratuito y de código abierto
 - Objetivos: crear herramientas, documentación y estándares relacionados con la seguridad en aplicaciones
+
+![WhatsApp Image 2022-12-29 at 6 33 05 PM](https://user-images.githubusercontent.com/22668239/210022295-93ed2085-93e7-41de-8be6-8f0e7a600c51.jpeg)
+
 
