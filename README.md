@@ -6,9 +6,6 @@ Aqui escribre una descripción con imagen Alain
 #### ANALYSIS
 Se usó la herramienta SONARQUBE para el análisis estático del codigo
 
-![sonar](https://user-images.githubusercontent.com/22668239/210021811-03e44a48-280d-4632-ae86-c23410063227.jpeg)
-
-
 #### UNIT TEST
 #Aqui escribre una descripción con imagen Cecilia sobre lo que son las pruebas unitarias
 
@@ -22,14 +19,12 @@ Aqui escribre una descripción con imagen Alain
 Aqui pondra el codigo alvaro
 
 ## Análisis con SonarQube
-Aqui pondra imagen alvaro
+![image](https://user-images.githubusercontent.com/22668239/210021858-a9850c9b-db42-464b-999f-460a94544a08.png)
 
 ## Refactoring code
-### Bad smells in code
-Aqui coloca bad smell alvaro
 
-### Duplicate code
-Aqui coloca bad smell alvaro
+### Code smells 
+![image](https://user-images.githubusercontent.com/22668239/210022028-c1399bd1-1a87-4e86-b0a8-69bc18fb7f91.png)
 
 # Casos de Prueba
 Los casos de prueba son los escenarios que se utilizan para medir la funcionalidad de la aplicación a través de un conjunto de ciertas acciones o condiciones para verificar los resultados esperados. En otras palabras, un caso de prueba es un conjunto de acciones ejecutadas para autenticar la funcionalidad de su aplicación de software. 
@@ -56,9 +51,9 @@ Algunos consejos que debe tener en cuenta al escribir un caso de prueba incluyen
 
 ## **Ejecución de Test Unitarios*
 ## **Pruebas de Performance con Jmeter**
-Aqui escribre una descripción con imagen Albert 
+![image](https://user-images.githubusercontent.com/22668239/210021983-655d95fe-ea7b-42f5-9c6c-25fd31c76849.png)
 ## **Pruebas funcionales con Selenium**
-Aqui escribre una descripción con imagen Albert 
+![image](https://user-images.githubusercontent.com/22668239/210021992-e72e607f-6f62-4719-8db8-0a3aebc26199.png)
 
 ## **Pruebas de seguridad con OWASP**
-Aqui escribre una descripción con imagen Joao
+![image](https://user-images.githubusercontent.com/22668239/210021871-5635abfa-4141-4051-ad8b-4027fddff68f.png)
