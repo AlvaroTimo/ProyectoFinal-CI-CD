@@ -3705,9 +3705,6 @@ textarea.form-control-lg {
 .dropend .dropdown-toggle:empty::after {
   margin-left: 0;
 }
-.dropend .dropdown-toggle::after {
-  vertical-align: 0;
-}
 
 .dropstart .dropdown-menu[data-bs-popper] {
   top: 0;
@@ -3722,9 +3719,7 @@ textarea.form-control-lg {
   vertical-align: 0.255em;
   content: "";
 }
-.dropstart .dropdown-toggle::after {
-  display: none;
-}
+
 .dropstart .dropdown-toggle::before {
   display: inline-block;
   margin-right: 0.255em;
