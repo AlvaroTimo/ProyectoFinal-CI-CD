@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "test": "jest",
+    "test": "jest --findRelatedTests tests/app.test.js tests/db.test.js tests/shoppingCart.test.js",
     "sonar": "node sonar-project.js",
     "test2": "jest --watchAll"
   },
