@@ -70,7 +70,22 @@ Aqui pondra imagen alvaro
 
 ## **Ejecución de Test Unitarios*
 ## **Pruebas de Performance con Jmeter**
-Aqui escribre una descripción con imagen Albert 
+También conocido como 'Apache JMeter', es una aplicación de código abierto - Java con una interfaz
+gráfica. Está diseñado para analizar y medir el rendimiento y el comportamiento de carga funcional de aplicaciones
+web y una variedad de servicios.
+Características: JMeter soporta varios enfoques de pruebas no funcionales, como pruebas de carga, pruebas de
+estrés, pruebas de volumen, pruebas de resistencia, pruebas distribuidas, pruebas de servicios web, etc. También
+proporciona soporte para protocolos como:
+ Web Services - SOAP / XML-RPC
+ Web - HTTP, HTTPS sites 'web 1.0' web 2.0 (ajax, flex and flex-ws-amf)
+ Database via JDBC drivers
+ Directory - LDAP
+ Messaging oriented service via JMS
+ Service - POP3, IMAP, SMTP
+Funcionamiento: JMeter simula un grupo de usuarios virtuales (threads-hilos) y los usa para enviar solicitudes
+(requests) en el servidor de destino. También recopila cada respuesta proveniente del servidor en forma de tablas,
+gráficos, árbol de resultados, etc.
+
 ## **Pruebas funcionales con Selenium**
 Aqui escribre una descripción con imagen Albert 
 
