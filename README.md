@@ -24,7 +24,7 @@ Aqui pondra el codigo alvaro
 ## Refactoring code
 
 ### Code smells 
-![image](https://user-images.githubusercontent.com/22668239/210022028-c1399bd1-1a87-4e86-b0a8-69bc18fb7f91.png)
+
 
 # Casos de Prueba
 Los casos de prueba son los escenarios que se utilizan para medir la funcionalidad de la aplicación a través de un conjunto de ciertas acciones o condiciones para verificar los resultados esperados. En otras palabras, un caso de prueba es un conjunto de acciones ejecutadas para autenticar la funcionalidad de su aplicación de software. 
