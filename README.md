@@ -8,7 +8,8 @@ Se usó la herramienta SONARQUBE para el análisis estático del codigo
 Aqui escribre una descripción con imagen Albert 
 
 #### UNIT TEST
-#####¿Qué es el Unit Testing?
+
+¿Qué es el Unit Testing?
 
 El Unit testing, son trozos de código diseñados para comprobar que el código principal está funcionando como esperábamos. Estas pruebas forman parte de los diferentes procedimientos que podemos llevar a cabo en una metodología ágil.
 
@@ -22,7 +23,7 @@ Asert: se considera el momento en que comprobamos si los resultados agrupados so
 
 Para ver si hay errores de integración es necesario realizar otro tipo de pruebas de software conjuntas y de esta manera comprobar la efectividad total del código.
 
-######¿Por qué hacer pruebas y por qué son tan importantes?
+¿Por qué hacer pruebas y por qué son tan importantes?
 
 Hacer unit testing o pruebas es la forma de asegurarse que lo que queremos que haga nuestro programa, lo haga, y lo haga bien.
 
