@@ -6,7 +6,7 @@ describe("Items",()=>{
     })
 
     test('Should have id, title, price, qty as atributes',()=>{
-        for(item of db.items){
+        for(let item of db.items){
             expect(item).toBeInstanceOf(Object)
             expect(item.id).toEqual(expect.any(Number))
             expect(item.title).toEqual(expect.any(String))
