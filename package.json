@@ -6,16 +6,18 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "test": "jest --findRelatedTests tests/app.test.js tests/db.test.js tests/shoppingCart.test.js",
-    "sonar": "node sonar-project.js",
-    "test2": "jest --watchAll"
+    "test2": "jest --findRelatedTests tests/funcional.test.js",
+    "sonar": "node sonar-project.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chromedriver": "^108.0.0",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "selenium-webdriver": "^4.7.1"
   },
   "devDependencies": {
     "jest": "^29.3.1",
