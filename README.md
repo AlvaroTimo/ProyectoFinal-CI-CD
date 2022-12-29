@@ -8,7 +8,27 @@ Se usó la herramienta SONARQUBE para el análisis estático del codigo
 Aqui escribre una descripción con imagen Albert 
 
 #### UNIT TEST
-#Aqui escribre una descripción con imagen Cecilia sobre lo que son las pruebas unitarias
+#####¿Qué es el Unit Testing?
+
+El Unit testing, son trozos de código diseñados para comprobar que el código principal está funcionando como esperábamos. Estas pruebas forman parte de los diferentes procedimientos que podemos llevar a cabo en una metodología ágil.
+
+El proceso que se lleva a cabo consta de tres partes:
+
+Arrange: donde se definen los requisitos que debe cumplir el código principal.
+
+Act: el proceso de creación, donde vamos acumulando los resultados que analizaremos.
+
+Asert: se considera el momento en que comprobamos si los resultados agrupados son correctos o incorrectos. Dependiendo del resultado, se valida y continúa, o se repara, de forma que el error desaparezca.
+
+Para ver si hay errores de integración es necesario realizar otro tipo de pruebas de software conjuntas y de esta manera comprobar la efectividad total del código.
+
+######¿Por qué hacer pruebas y por qué son tan importantes?
+
+Hacer unit testing o pruebas es la forma de asegurarse que lo que queremos que haga nuestro programa, lo haga, y lo haga bien.
+
+La construcción de software, una aplicación o un sitio web implica conocimiento, experiencia, talento, capacidad intelectual y un punto de arte. Es decir, es una labor muy difícil, y falta aún mucho para que eso cambie a mejor.
+
+Los fallos y errores son inevitables si los intentamos evitar con solo nuestras capacidades humanas.
 
 #### PERFORMANCE TEST
 ##### ¿Qué es Performance Testing?
