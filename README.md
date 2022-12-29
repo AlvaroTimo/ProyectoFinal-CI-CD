@@ -93,13 +93,13 @@ Selenium es un conjunto de utilidades que facilita la labor de obtener juegos de
 
 Además de ser una herramienta para registrar acciones, permite editarlas manualmente o crearlas desde cero. Las acciones se basan en el uso de diferentes API's en diferentes lenguajes (PHP, Ruby, JAVA, Javascript, etc). Entre su principales características podemos nombrar:
 
--Facilidad de registro y ejecución de los test.
--Referencia a objetos DOM en base al ID, nombre o a través de XPath.
--Auto-completado para todos los comandos.
--Las acciones pueden ser ejecutadas paso a paso.
--Herramientas de depuración y puntos de ruptura (breakpoints).
--Los test pueden ser almacenados en diferentes formatos.
-
+- Facilidad de registro y ejecución de los test.
+- Referencia a objetos DOM en base al ID, nombre o a través de XPath.
+- Auto-completado para todos los comandos.
+- Las acciones pueden ser ejecutadas paso a paso.
+- Herramientas de depuración y puntos de ruptura (breakpoints).
+- Los test pueden ser almacenados en diferentes formatos.
+ 
 El potencial de esta herramienta puede ser utilizado para la grabación de las pruebas funcionales durante la Generación de pruebas de regresión. Con este servicio se consigue obtener una batería de pruebas automatizadas que podrán ser utilizadas cuando sea necesario repetir las pruebas.
 
 ## **Pruebas de seguridad con OWASP**
