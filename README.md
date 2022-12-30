@@ -1,5 +1,5 @@
 # ProyectoFinal-CI-CD
-El proyecto es una tienda que vende todo tipo de articulos, la tienda tiene un carrito incluido, y permite agregar productos, se pueden ver facilmente las vistas colocando npm install, seguido de npm run dev e ir a la terminal
+El proyecto es una tienda que vende todo tipo de articulos, la tienda tiene un carrito incluido, y permite agregar productos, se pueden ver facilmente las vistas colocando npm install, seguido de npm run dev e ir al localhost 3000.
 
 ## Pipeline
 ![WhatsApp Image 2022-12-29 at 7 07 39 PM](https://user-images.githubusercontent.com/22668239/210022707-b26bc8b3-6e2a-4649-a711-6097e9e5a215.jpeg)
