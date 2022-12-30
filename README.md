@@ -125,3 +125,5 @@ El Open Web Application Security Project (OWASP) está dedicado a la búsqueda y
 ## Gestion de issues con Trello
 
 Trello es una herramienta visual que permite a los equipos gestionar cualquier tipo de proyecto y flujo de trabajo, así como supervisar tareas. Añade archivos, checklists o incluso automatizaciones: personalízalo todo según las necesidades de tu equipo. Solo tienes que registrarte, crear un tablero y ¡listo!
+
+![WhatsApp Image 2022-12-29 at 9 04 07 PM](https://user-images.githubusercontent.com/22668239/210027411-d17fa00f-9222-4b22-b404-ecb97a24f715.jpeg)
