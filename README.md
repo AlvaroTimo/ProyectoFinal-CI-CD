@@ -1,6 +1,6 @@
 # ProyectoFinal-CI-CD
 ## Pipeline
-Aqui escribre una descripción con imagen Alain
+![WhatsApp Image 2022-12-29 at 7 07 39 PM](https://user-images.githubusercontent.com/22668239/210022707-b26bc8b3-6e2a-4649-a711-6097e9e5a215.jpeg)
 ### Fases:
 
 #### ANALYSIS
