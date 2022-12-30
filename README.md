@@ -1,3 +1,12 @@
+# Integrantes del grupo
+
++ Alvaro Joel Ticona Molta
++ Miguel Angel Deza Cuela
++ Cecilia del Pilar Vilca Alvites
++ Ancel Alain Fernando Cruz Chaiña
++ Joao Franco Emanuel Chavez Salas
++ Albert Daniel Llica Alvarez
+
 # ProyectoFinal-CI-CD
 El proyecto es una tienda que vende todo tipo de articulos, la tienda tiene un carrito incluido, y permite agregar productos, se pueden ver facilmente las vistas colocando npm install, seguido de npm run dev e ir al localhost 3000.
 
