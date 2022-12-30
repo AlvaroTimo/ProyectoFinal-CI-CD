@@ -29,7 +29,6 @@ const db = {
         product.qty = product.qty - item.qty;
 
       });
-      console.log(db);
     },
     addProduct: (title,price,qty)=>{
       let newId=db.items.length
@@ -94,7 +93,7 @@ const shoppingCart = {
     },
   };
 
-  db.methods.addProduct("hola",12,10);
+  // db.methods.addProduct("hola",12,10);
 
 
 window.onload = function () {
@@ -103,18 +102,18 @@ window.onload = function () {
   function renderStore() {
     const html = db.items.map((item) => {
       return `
-          <div class="item">
+          <div class="item" id="${item.id}">
               <div class="title">${item.title}</div>
               <div class="price">${numberToCurrency(item.price)}</div>
               <div class="qty">${item.qty} units</div>
               <div class="actions"><button class="add" data-id="${
                 item.id
-              }">Add to the shopping cart</button></div>
+              }" name="${item.id}">Add to the shopping cart</button></div>
           </div>`;
     }
     );
   
-    const addButton = `<button class="add"> <a href="/agregarProducto">Agregar nuevo producto</a></button>`;
+    const addButton = `<button class="add"> <a href="/agregarProducto" name="add_product">Agregar nuevo producto</a></button>`;
 
     document.querySelector("#store-container").innerHTML = html.join("")+ addButton;
   
@@ -122,10 +121,8 @@ window.onload = function () {
       button.addEventListener("click", (e) => {
         const id = parseInt(button.getAttribute("data-id"));
         const item = db.methods.find(id);
-        console.log(item)
         if (item && item.qty - 1 > 0) {
           shoppingCart.methods.add(id, 1);
-          console.log(db, shoppingCart);
           renderShoppingCart();
         } else {
           alert("Ya no hay existencia de ese artículo");

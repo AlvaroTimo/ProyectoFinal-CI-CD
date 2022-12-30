@@ -64,7 +64,7 @@ describe("Items",()=>{
 
     test('Should have id and qty as atributes',()=>{
         shoppingCart.methods.add(1,2)
-        for(item of shoppingCart.items){
+        for(let item of shoppingCart.items){
             expect(item).toBeInstanceOf(Object)
             expect(item.id).toEqual(expect.any(Number))
             expect(item.qty).toEqual(expect.any(Number))

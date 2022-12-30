@@ -18,19 +18,14 @@ pipeline {
         }
       }
     }
-    stage('Test'){
+    stage('Tests unitarios'){
       steps {
         sh 'npm run test'
       }
     }
-    stage('Static Analysis') {
-      environment {
-        SCANNER_HOME = tool 'SonarScanner'
-      }
+    stage('Tests funcionales'){
       steps {
-        withSonarQubeEnv('Sonarqube') {
-            sh '$SCANNER_HOME/bin/sonar-scanner -X'
-        }
+        sh 'npm run test2'
       }
     }
   }
