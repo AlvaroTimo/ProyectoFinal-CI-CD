@@ -1,4 +1,6 @@
 # ProyectoFinal-CI-CD
+El proyecto es una tienda que vende todo tipo de articulos, la tienda tiene un carrito incluido, y permite agregar productos, se pueden ver facilmente las vistas colocando npm install, seguido de npm run dev e ir a la terminal
+
 ## Pipeline
 ![WhatsApp Image 2022-12-29 at 7 07 39 PM](https://user-images.githubusercontent.com/22668239/210022707-b26bc8b3-6e2a-4649-a711-6097e9e5a215.jpeg)
 ### Fases:
@@ -31,6 +33,7 @@ La construcción de software, una aplicación o un sitio web implica conocimient
 
 Los fallos y errores son inevitables si los intentamos evitar con solo nuestras capacidades humanas.
 
+![WhatsApp Image 2022-12-29 at 6 36 31 PM](https://user-images.githubusercontent.com/22668239/210022254-d52596de-f8ea-476c-9958-6462493d14b1.jpeg)
 
 
 #### PERFORMANCE TEST
@@ -67,10 +70,6 @@ Analizan si una aplicación de software o un entorno pueden manejar la cantidad 
 ## Refactoring code
 ### Bad smells in code
 ![WhatsApp Image 2022-12-29 at 6 41 23 PM](https://user-images.githubusercontent.com/22668239/210022228-f3bb33b7-47e2-4b1b-bc1d-e54e5cd671c9.jpeg)
-
-## **Ejecución de Test Unitarios*
-
-![WhatsApp Image 2022-12-29 at 6 36 31 PM](https://user-images.githubusercontent.com/22668239/210022254-d52596de-f8ea-476c-9958-6462493d14b1.jpeg)
 
 ## **Pruebas de Performance con Jmeter**
 También conocido como 'Apache JMeter', es una aplicación de código abierto - Java con una interfaz
