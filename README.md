@@ -69,6 +69,9 @@ Analizan si una aplicación de software o un entorno pueden manejar la cantidad 
 ![WhatsApp Image 2022-12-29 at 6 41 23 PM](https://user-images.githubusercontent.com/22668239/210022228-f3bb33b7-47e2-4b1b-bc1d-e54e5cd671c9.jpeg)
 
 ## **Ejecución de Test Unitarios*
+
+![WhatsApp Image 2022-12-29 at 6 36 31 PM](https://user-images.githubusercontent.com/22668239/210022254-d52596de-f8ea-476c-9958-6462493d14b1.jpeg)
+
 ## **Pruebas de Performance con Jmeter**
 También conocido como 'Apache JMeter', es una aplicación de código abierto - Java con una interfaz
 gráfica. Está diseñado para analizar y medir el rendimiento y el comportamiento de carga funcional de aplicaciones
@@ -88,7 +91,9 @@ Funcionamiento: JMeter simula un grupo de usuarios virtuales (threads-hilos) y l
 (requests) en el servidor de destino. También recopila cada respuesta proveniente del servidor en forma de tablas,
 gráficos, árbol de resultados, etc.
 
-![WhatsApp Image 2022-12-29 at 6 36 31 PM](https://user-images.githubusercontent.com/22668239/210022254-d52596de-f8ea-476c-9958-6462493d14b1.jpeg)
+
+![WhatsApp Image 2022-12-29 at 7 10 16 PM](https://user-images.githubusercontent.com/22668239/210022835-0faa315a-b71c-4e25-9af3-0cea9a309429.jpeg)
+
 
 
 ## **Pruebas funcionales con Selenium**
